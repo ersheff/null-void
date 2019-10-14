@@ -7,7 +7,7 @@ Prepping the Raspberry Pi:
 2. Create blank file named "ssh" in boot directory on micro SD card (enables SSH)
 3. SSH into Pi via Terminal `ssh -XY pi@raspberrypi.local`
 4. Install Git `sudo apt-get install git`
-5. Download the Pd and Arduino repo via Git `git init blah blah` (fix this)
+
 
 Setup Pd and Arduino:
 1. Install Pd Vanilla
@@ -18,9 +18,11 @@ Setup Pd and Arduino:
     - On Pi: possibly via apt-get? (double check this)
         - `sudo apt-get install pd-comport`
         - `sudo apt-get install pd-cyclone`
-3. Upload Arduino code to Arduino (recommended from macOS)
-4. Prep startup script (to-do)
-
+3. Download/update the Pd and Arduino repo via Git
+     - First time `git clone https://github.com/ersheff/null-void.git`
+     - Updates `git pull`
+4. Upload Arduino code to Arduino (recommended from macOS)
+5. Prep startup script (to-do)
 
 Pd patches, Arduino code, and Raspberry Pi setup by Eric Sheffield
 Anna Weisling & Eric Sheffield © 2019
