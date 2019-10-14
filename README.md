@@ -30,8 +30,7 @@ Anna Weisling & Eric Sheffield © 2019
 
 To-dos:
 - In patch
-    - Create "high risk" state
-    - etc
+    - Finish initializations and mode changes
 - Create startup script
     - Pd starup flags to try/investigate
         - nogui

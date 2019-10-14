@@ -1,0 +1,38 @@
+#N canvas 191 136 723 440 12;
+#X obj 34 228 +;
+#X obj 34 197 random;
+#X obj 72 226 random 2;
+#X obj 34 279 spigot;
+#X obj 72 257 == 0;
+#X obj 122 257 == 1;
+#X obj 84 281 spigot;
+#X obj 84 304 * -1;
+#X obj 78 110 inlet;
+#X obj 34 49 inlet;
+#X obj 34 97 sel 0;
+#X obj 34 358 outlet;
+#X text 130 49 first argument = odds (e.g. 10 = 10% \, 100 = 1%) second
+argument = scale \, the incoming value is multiplied by scale to set
+the size of the random then added to itself to set the minimum of the
+range (e.g. 0.1 = 1/10-1/5), f 76;
+#X obj 34 73 random \$1;
+#X obj 76 167 * \$2;
+#X obj 126 166 * \$2;
+#X connect 0 0 6 0;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;
+#X connect 2 0 5 0;
+#X connect 3 0 11 0;
+#X connect 4 0 3 1;
+#X connect 5 0 6 1;
+#X connect 6 0 7 0;
+#X connect 7 0 11 0;
+#X connect 8 0 14 0;
+#X connect 8 0 15 0;
+#X connect 9 0 13 0;
+#X connect 10 0 2 0;
+#X connect 10 0 1 0;
+#X connect 13 0 10 0;
+#X connect 14 0 1 1;
+#X connect 15 0 0 1;
