@@ -1,4 +1,4 @@
-<h1>Null/Void<h1>
+Null/Void
 
 This repo contains the Pd patches and Arduino code for Anna Weisling's <emph>Null/Void<emph> dissertation project.
 
