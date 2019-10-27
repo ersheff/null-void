@@ -12,19 +12,16 @@ This repo contains the Pd patches and Arduino code for Anna Weisling's <emph>Nul
      - Update the repo with `git pull`.
 
 ## Prepping the Arduino
-Download the Arduino code from the repo separately at https://github.com/ersheff/null-void and upload to your Arduino (recommended from macOS).
+Download the Arduino code from the repo separately and upload to your Arduino (recommended from macOS).
 
 ## Running the Pi
 Just plug it in. After about 30-40 seconds, the <emph>_main.pd<emph> patch will start automatically.
-
-
-
-Pd patches, Arduino code, and Raspberry Pi setup by Eric Sheffield  
-Anna Weisling & Eric Sheffield © 2019
-
-
 
 ### To-dos:
 - Add Anna’s features
 - Add some kind of startup bloop for when the patch launches
 - Remove redundant calibration swipe at boot AND serial connect (if possible)
+
+
+Pd patches, Arduino code, and Raspberry Pi setup by Eric Sheffield  
+Anna Weisling & Eric Sheffield © 2019
