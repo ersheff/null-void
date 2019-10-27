@@ -11,10 +11,10 @@ Prepping the Raspberry Pi:
      - Change directory to null-void with `cd null-void`.
      - Update the repo with `git pull`.
 
-Prepping the Arduino:
+Prepping the Arduino:  
 Download the Arduino code from the repo separately at https://github.com/ersheff/null-void and upload to your Arduino (recommended from macOS).
 
-Running the Pi:
+Running the Pi:  
 Just plug it in. After about 30-40 seconds, the <emph>_main.pd<emph> patch will start automatically.
 
 
