@@ -1,6 +1,6 @@
 #N canvas 0 0 1440 878 12;
 #X obj 36 654 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X obj 911 110 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 36 792 5 0 0 0 - - -;
@@ -25,7 +25,7 @@ peaks;
 #X text 932 102 speed of accumulator leak;
 #X text 1756 136 pitch resource pool;
 #X obj 122 655 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X floatatom 122 793 5 0 0 0 - - -;
 #X obj 141 654 t b;
 #X obj 120 587 f;
@@ -33,7 +33,7 @@ peaks;
 #X obj 141 701 - 100;
 #X obj 140 746 s p-dec;
 #X obj 207 655 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X floatatom 207 793 5 0 0 0 - - -;
 #X obj 226 654 t b;
 #X obj 205 587 f;
@@ -41,7 +41,7 @@ peaks;
 #X obj 226 701 - 100;
 #X obj 225 746 s p-dec;
 #X obj 291 655 vsl 15 128 0 200 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 5048 1;
 #X floatatom 291 793 5 0 0 0 - - -;
 #X obj 310 654 t b;
 #X obj 289 587 f;
@@ -49,7 +49,7 @@ peaks;
 #X obj 310 701 - 100;
 #X obj 309 746 s p-dec;
 #X obj 375 655 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X floatatom 375 793 5 0 0 0 - - -;
 #X obj 394 654 t b;
 #X obj 373 587 f;
@@ -57,7 +57,7 @@ peaks;
 #X obj 394 701 - 100;
 #X obj 393 746 s p-dec;
 #X obj 459 655 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X floatatom 459 793 5 0 0 0 - - -;
 #X obj 478 654 t b;
 #X obj 478 677 f;
@@ -66,7 +66,7 @@ peaks;
 #X obj 478 701 - 100;
 #X obj 477 746 s p-dec;
 #X obj 543 655 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X floatatom 543 793 5 0 0 0 - - -;
 #X obj 562 654 t b;
 #X obj 562 677 f;
@@ -75,7 +75,7 @@ peaks;
 #X obj 562 701 - 100;
 #X obj 561 746 s p-dec;
 #X obj 626 655 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X floatatom 626 793 5 0 0 0 - - -;
 #X obj 645 654 t b;
 #X obj 645 677 f;
@@ -84,7 +84,7 @@ peaks;
 #X obj 645 701 - 100;
 #X obj 644 746 s p-dec;
 #X obj 710 656 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X floatatom 710 794 5 0 0 0 - - -;
 #X obj 729 655 t b;
 #X obj 729 678 f;
@@ -93,7 +93,7 @@ peaks;
 #X obj 729 702 - 100;
 #X obj 728 747 s p-dec;
 #X obj 794 655 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X floatatom 794 793 5 0 0 0 - - -;
 #X obj 813 654 t b;
 #X obj 813 677 f;
@@ -102,7 +102,7 @@ peaks;
 #X obj 813 701 - 100;
 #X obj 812 746 s p-dec;
 #X obj 879 656 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X floatatom 879 794 5 0 0 0 - - -;
 #X obj 898 655 t b;
 #X obj 898 678 f;
@@ -112,7 +112,7 @@ peaks;
 #X obj 897 747 s p-dec;
 #X obj 33 554 route 0 1 2 3 4 5 6 7 8 9 10 11;
 #X obj 963 655 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10096 1;
 #X floatatom 963 793 5 0 0 0 - - -;
 #X obj 982 654 t b;
 #X obj 982 677 f;
@@ -150,7 +150,7 @@ peaks;
 #X obj 1188 320 filters;
 #X obj 1200 443 metro 23.25;
 #X obj 1189 491 vsl 15 128 0 0.5 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 48 1;
+-1 -1 24 1;
 #X floatatom 1211 605 5 0 0 0 - - -;
 #X obj 1189 661 -;
 #X obj 1221 663 f;
@@ -354,6 +354,26 @@ less strong, f 100;
 #X obj 1686 806 abs;
 #X obj 1749 786 - 254;
 #X obj 1749 807 abs;
+#N canvas 537 417 450 300 bloop 0;
+#X obj 24 9 r loadbang;
+#X obj 26 134 readsf~ 2;
+#X msg 25 37 open ./bloopgrrr.wav;
+#X obj 25 198 *~ 0.5;
+#X obj 25 234 outlet~;
+#X obj 85 197 *~ 0.5;
+#X obj 86 233 outlet~;
+#X msg 56 99 1;
+#X obj 56 72 delay 500;
+#X connect 0 0 2 0;
+#X connect 0 0 8 0;
+#X connect 1 0 3 0;
+#X connect 1 1 5 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 5 0 6 0;
+#X connect 7 0 1 0;
+#X connect 8 0 7 0;
+#X restore 781 454 pd bloop;
 #X connect 0 0 2 0;
 #X connect 1 0 130 0;
 #X connect 2 0 155 1;
@@ -707,3 +727,5 @@ less strong, f 100;
 #X connect 327 0 212 0;
 #X connect 328 0 329 0;
 #X connect 329 0 213 0;
+#X connect 330 0 199 0;
+#X connect 330 1 199 1;

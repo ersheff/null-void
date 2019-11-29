@@ -16,12 +16,8 @@
 #define voltmeter3Pin 11
 
 // min and max PWM values for meters for calibration
-#define minPWM1 3
-#define maxPWM1 144
-#define minPWM2 3
-#define maxPWM2 144
-#define minPWM3 3
-#define maxPWM3 144
+#define minPWM 3
+#define maxPWM 144
 
 // adjust length of time for voltmeter swipes
 #define swipeDelay 10
@@ -105,9 +101,9 @@ void readIncomingSerial(){
 
 
 void writeVoltmeterPWM(){
-    analogWrite(voltmeter1Pin, map(receiveBits[0], 0, 254, minPWM1, maxPWM1));
-    analogWrite(voltmeter2Pin, map(receiveBits[1], 0, 254, minPWM2, maxPWM2));
-    analogWrite(voltmeter3Pin, map(receiveBits[2], 0, 254, minPWM3, maxPWM3));
+    analogWrite(voltmeter1Pin, map(receiveBits[0], 0, 254, minPWM, maxPWM));
+    analogWrite(voltmeter2Pin, map(receiveBits[1], 0, 254, minPWM, maxPWM));
+    analogWrite(voltmeter3Pin, map(receiveBits[2], 0, 254, minPWM, maxPWM));
 }
 
 
@@ -131,27 +127,15 @@ void startSequence() {
   //send transmitBits to zero out Pd
   Serial.write(transmitBits, 6);
   // do the swipes
-  for(int i = minPWM1; i <= maxPWM1; i++){
+  for(int i = minPWM; i <= maxPWM; i++){
     analogWrite(voltmeter1Pin, i);
-    delay(swipeDelay);
-  }
-  for(int i = maxPWM1; i >= minPWM1; i--){
-    analogWrite(voltmeter1Pin, i);
-    delay(swipeDelay);
-  }
-  for(int i = minPWM2; i <= maxPWM2; i++){
     analogWrite(voltmeter2Pin, i);
-    delay(swipeDelay);
-  }
-  for(int i = maxPWM2; i >= minPWM2; i--){
-    analogWrite(voltmeter2Pin, i);
-    delay(swipeDelay);
-  }
-  for(int i = minPWM3; i <= maxPWM3; i++){
     analogWrite(voltmeter3Pin, i);
     delay(swipeDelay);
   }
-  for(int i = maxPWM3; i >= minPWM3; i--){
+  for(int i = maxPWM; i >= minPWM; i--){
+    analogWrite(voltmeter1Pin, i);
+    analogWrite(voltmeter2Pin, i);
     analogWrite(voltmeter3Pin, i);
     delay(swipeDelay);
   }

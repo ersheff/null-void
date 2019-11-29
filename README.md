@@ -15,13 +15,12 @@ This repo contains the Pd patches and Arduino code for Anna Weisling's **Null/Vo
 Download the Arduino code from the repo separately and upload to your Arduino (recommended from macOS).
 
 ## Running the Pi
-Just plug it in. After about 30-40 seconds, the **_main.pd** patch will start automatically.
+Just plug it in. After about 30-40 seconds, the **_main.pd** patch will start automatically, and you will hear a lovely startup chime.
 
-### To-dos:
-- Add Anna’s features
-- Add some kind of startup bloop for when the patch launches
-- Remove redundant calibration swipe at boot AND serial connect (if possible)
-
+## Refreshing the local installation
+Run the following commands from the terminal on the Pi that needs its local Null/Void installation replaced with the current version in the remote repo:
+`git fetch origin`
+`git reset --hard origin/master`
 
 Pd patches, Arduino code, and Raspberry Pi setup by Eric Sheffield  
 Anna Weisling & Eric Sheffield © 2019
