@@ -18,7 +18,7 @@ Download the Arduino code from the repo separately and upload to your Arduino (r
 Just plug it in. After about 30-40 seconds, the **_main.pd** patch will start automatically, and you will hear a lovely startup chime.
 
 ## Refreshing the local installation
-Run the following commands from the terminal on the Pi that needs its local Null/Void installation replaced with the current version in the remote repo:
+Run the following commands in terminal from the null-void directory on the Pi that needs its local Null/Void installation replaced with the remote master:
 `git fetch origin`
 `git reset --hard origin/master`
 
